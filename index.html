@@ -8,34 +8,70 @@
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
-    <nav class="desktop-nav">
-        <div class="logo">Toby Lester</div>    
-        <div>
-            <ul class="nav-links">
-                <li><a href="">First</a></li>
-                <li><a href="">Second</a></li>
-                <li><a href="">Third</a></li>
-                <li><a href="">Fourth</a></li>
+    <nav class="nav-bar">
+        <div class="logo">Toby Lester</div>
+        <div class="menu-bar">
+            <ul class="menu-items">
+                <li><a href="#about-me" class="menu-hover">About me</a></li>
+                <li><a href="#projects" class="menu-hover">Projects</a></li>
+                <li><a href="#contact" class="cta">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="burger-menu">
+            <input type="checkbox" id="burger-toggle">
+            <label for="burger-toggle" class="burger-icon">&#9776;</label>
+            <ul class="menu-items">
+                 <li><a href="#about-me">About me</a></li>
+                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <nav class="mobile-nav">
-        <div class="logo">Toby Lester</div>    
-        <div>
-            <div class="burger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+    <section class="hero">
+        <div  class="columns">
+            <div class="column">
+                <h1>Hi. I'm Toby.<br>Good to meet you.</h1>
+                <div style="padding: 1rem"></div>
+                <h3>I'm a detail-oriented <span class="highlight">content manager</span>, an efficient and innovative <span class="highlight">copywriter</span>, and a capable <span class="highlight">frontend web developer.</span></h2>
             </div>
-            <ul class="menu">
-                <li><a href="#">First</a></li>
-                <li><a href="#">Second</a></li>
-                <li><a href="#">Third</a></li>
-                <li><a href="#">Fourth</a></li>
-            </ul>
+            <img class="column photo" src="Toby Lester.png" alt="A picture of me, Toby Lester">
         </div>
-    </nav>
+
+   </section>
+
+  
+ 
+    <section class="about-me">
+        <h2>About me</h2>
+            <p>Some stuff about who I am and all that.</p>
+    </section>
+ 
+    <section class="projects">
+        <h2>My projects</h2>
+        <div class="tiles">
+            <div class="tile">
+                <img src="project 1.png" alt="add alt text here"></image>
+                <h3>A blog or <span class="highlight">something</span></h3>
+                <p>Some description text that says some things and stuff</p>
+            </div>
+            <div class="tile">
+                <img src="project 1.png" alt="add alt text here"></image>
+                <h3>A blog or <span class="highlight">something</span></h3>
+                <p>Some description text that says some things and stuff</p>
+            </div>
+            <div class="tile">
+                <img src="project 1.png" alt="add alt text here"></image>
+                <h3>A blog or <span class="highlight">something</span></h3>
+                <p>Some description text that says some things and stuff</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+
+    </section>
 
     <script src="script.js"></script>
 </body>

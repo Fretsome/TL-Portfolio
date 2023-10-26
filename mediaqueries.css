@@ -1,11 +1,35 @@
-@media screen and (max-width: 1200px) {
-    .desktop-nav {
+@media only screen and (min-width: 1200px) {
+    .burger-menu {
         display: none;
+    }
+
+    .menu-bar {
+        display: flex;
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .mobile-nav {
-        display: none;
+@media only screen and (max-width: 1200px) {
+    .burger-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: fit-content;
+      height: fit-content;
     }
-}
+  
+    .menu-items {
+      display: none;
+    }
+  
+    #burger-toggle:checked ~ .menu-items {
+      display: block;
+      position: absolute;
+      background-color: var(--white);
+      width: fit-content;
+      padding: 1rem;
+    }
+    
+    #burger-toggle:checked ~ .menu-items li {
+        margin-bottom: 1rem;
+    }
+  }
