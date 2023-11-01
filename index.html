@@ -129,7 +129,7 @@
                 </div>
                 <div class="column form-wrapper">
                     <h3><span class="highlight">Fill in the form</span> to send me a message.</h3>
-                    <form>
+                    <form method="post" action="https://formspree.io/f/mrgwdbez">
                         <div class="input-wrapper">
                             <label for="input-name">Name</label>
                             <input id="input-name" type="text" name="input-name">
@@ -140,8 +140,9 @@
                         </div>
                         <div class="textarea-wrapper">
                             <label for="input-message">Message</label>
-                            <textarea id="input-message" type="text" name="input-message" rows="10"></textarea>
-                        </div>    
+                            <textarea id="input-message" type="text" name="input-message" rows="8"></textarea>
+                        </div>
+                        <input type="submit" class="cta">
                     </form>
                 </div>    
             </div>

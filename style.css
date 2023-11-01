@@ -130,7 +130,8 @@ h3 {
     border-radius: 10px;
     transition: color 1s ease, background-color 0.7s ease;
     text-decoration: none;
-    text-weight: bold;
+    font-weight: bold;
+    border: none;
 }
 
 .cta:hover {
