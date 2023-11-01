@@ -198,21 +198,22 @@ section {
     display: flex;
 }
 
+.hero-buttons i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .contact-icons {
     font-size: 2rem !important;
     margin-right: 1rem;
-    flex-direction: row;
     color: var(--black);
     background-color: var(--copper);
     border-radius: 50%;
     padding: 2rem;
     width: 3rem;;
     height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: color 1s ease, background-color 0.7s ease;
-
 }
 
 .contact-icons:hover {
