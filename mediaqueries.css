@@ -36,6 +36,13 @@
     .tile {
       flex: 0 0 40%;
     }
+
+    .contact {
+      flex-direction: column;
+    }
+
+    .contact-details-wrapper {
+      flex-direction: row;
   }
 
   @media screen and (max-width: 900px) {
@@ -50,5 +57,13 @@
     .tile {
       flex: 0 0 100%;
     }
+
+    .contact-details-wrapper {
+      flex-direction: column;
+  }
+
+.input-wrapper {
+  flex-basis: 100%;
+}
   }
 }
