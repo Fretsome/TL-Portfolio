@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
+    <meta name="description" content="   ">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -12,20 +13,23 @@
 <body>
     <nav class="nav-bar">
         <div class="logo">Toby Lester</div>
+        <div><a href="#contact" class="cta-burger">Contact</a></div>
+
         <div class="menu-bar">
             <ul class="menu-items">
                 <li><a href="#about-me" class="menu-hover">About me</a></li>
                 <li><a href="#projects" class="menu-hover">Projects</a></li>
+                <li><a href="#testimonials" class="menu-hover">Testimonials</a></li>
                 <li><a href="#contact" class="cta">Contact</a></li>
             </ul>
         </div>
-
         <div class="burger-menu">
             <a href="javascript:void(0);" class="burger-icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i></a>
                 <ul id="burger-items">
                     <li><a href="#about-me" onclick="myFunction()">About me</a></li>
                     <li><a href="#projects" onclick="myFunction()">Projects</a></li>
+                    <li><a href="#testimonials" onclick="myFunction()">Testimonials</a></li>
                    <li><a href="#contact" onclick="myFunction()">Contact</a></li>
                </ul>
                         </div>
@@ -50,36 +54,37 @@
  
     <section id="about-me" class="about-me">
         <h2>About me</h2>
-        <h4>My unique combination of skills make me a total web content management solution.</h4>
+        <h4>Looking for a solution to your web content management needs? Look no further!</h4>
         <div class="padding"></div>
-        <div class="columns">
-            <div class="column">
+        <div class="about-me-columns">
+            <div class="about-me-column">
                 <span class="material-symbols-outlined">
                     edit
                     </span>
                 <h3>Copywriting</h3>
-                <p>Some more words can go here about how I'm amazing</p>
+                <p>My writing's been featured by <span class="highlight">top B2B brands</span>, including Mimeo and IRIS Software, and I've worked with a B2C startup to deliver a go-to-market content strategy across the East of England.</p>
             </div>
-            <div class="column">
+            <div class="about-me-column">
                 <span class="material-symbols-outlined">
                     menu_book
                     </span>                
                 <h3>Proofreading</h3>
-                <p>Some more words can go here about how I'm amazing</p>
+                <p>I'm an absolute pedant for correct punctuation and grammar, and I have over two years' <span class="highlight">professional proofreading experience</span>. I'll make your content more punchy, too.</p>
             </div>
-            <div class="column">
+            <div class="about-me-column">
                 <span class="material-symbols-outlined">
                     folder_copy
                     </span>                
                 <h3>CMS</h3>
-                <p>Some more words can go here about how I'm amazing</p>
+                <p>I've worked with a <span class="highlight">wide range of CMS platforms</span>, both custom-built and out-the-box. Whether you need me to step in and intuit your existing system or help you set something up, I'll take to it quickly.</p>
             </div>
-            <div class="column">
+            <div class="about-me-column">
                 <span class="material-symbols-outlined">
                     code
                     </span>                
                 <h3>Frontend</h3>
-                <p>Some more words can go here about how I'm amazing</p>
+                <p>I can build you a stunning and <span class="highlight">fully responsive web frontend</span>, employing the latest <span class="highlight">UX and UI best practice</span>. HTML, CSS, Javascript – I'll handle it all.
+                </p>
             </div>
             </div>
 
@@ -93,29 +98,75 @@
         <div class="padding"></div>
         <div class="tiles">
             <div class="tile">
-                <img src="project 1.png" alt="add alt text here"></image>
-                <h3>A blog or <span class="highlight">something</span></h3>
-                <p>Some description text that says some things and stuff</p>
+                <div class="tile-image-wrapper">
+                    <a href="https://github.com/Fretsome/TL-Portfolio" target="_blank">
+                        <img src="TL Portfolio Source Code.png" alt="A screenshot of the source code for this website">
+                    </a>
+                </div>
+                <h3>This <span class="highlight">website</span> you're visiting right now</h3>
+                <p>I built this site from scratch using raw HTML, CSS, and Javascript. It's fully responsive on any device size – try resizing your window to test it!</p>
+                <a href="https://github.com/Fretsome/TL-Portfolio" target="_blank"><div class="tile-button">View source code</div></a>
             </div>
             <div class="tile">
-                <img src="project 1.png" alt="add alt text here"></image>
-                <h3>A blog or <span class="highlight">something</span></h3>
-                <p>Some description text that says some things and stuff</p>
+                <div class="tile-image-wrapper">
+                    <a href="https://github.com/Fretsome/TL-Portfolio" target="_blank">
+                        <img src="TL Portfolio Source Code.png" alt="A screenshot of the source code for this website">
+                    </a>
+                </div>
+                <h3>This <span class="highlight">website</span> you're visiting right now</h3>
+                <p>I built this site from scratch using raw HTML, CSS, and Javascript. It's fully responsive on any device size – try resizing your window to test it!</p>
+                <a href="https://github.com/Fretsome/TL-Portfolio" target="_blank"><div class="tile-button">View source code</div></a>
             </div>
             <div class="tile">
-                <img src="project 1.png" alt="add alt text here"></image>
-                <h3>A blog or <span class="highlight">something</span></h3>
-                <p>Some description text that says some things and stuff</p>
+                <div class="tile-image-wrapper">
+                    <a href="https://github.com/Fretsome/TL-Portfolio" target="_blank">
+                        <img src="TL Portfolio Source Code.png" alt="A screenshot of the source code for this website">
+                    </a>
+                </div>
+                <h3>This <span class="highlight">website</span> you're visiting right now</h3>
+                <p>I built this site from scratch using raw HTML, CSS, and Javascript. It's fully responsive on any device size – try resizing your window to test it!</p>
+                <a href="https://github.com/Fretsome/TL-Portfolio" target="_blank"><div class="tile-button">View source code</div></a>
             </div>
         </div>
         
     </section>
    
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="carousel">
+            <div class="quote active">
+                <h4>It was a <span class="highlight">genuine pleasure</span> working with Toby for two years at Upp Broadband, 
+                    where his <span class="highlight">versatility</span> shone in roles spanning content creation, copywriting, 
+                    and web management and development. Toby’s ability to seamlessly adapt 
+                    to often diverse demands made him a <span class="highlight">standout contributor</span> to the Commercial team. 
+                    He was always quick to respond to an ever-changing landscape, 
+                    and consistently delivered <span class="highlight">high-quality work</span> that drove business critical projects forward. 
+                    <span class="highlight">I’d jump at the chance to work with Toby again in the future.</span> 
+                </h4>
+                <h4>Edward Money, Director of Brand Experience and Product at Upp Broadband</h4>
+            </div>
+            <div class="quote">
+                <h4>Toby is an <span class="highlight">adequate servant</span>. 
+                    I'm a very busy gentleman with plenty of important things to do about town, so it's good to know I have <span class="highlight">competent staff</span> at home to fill my bowl and brush my fur. 
+                    I have to make a small complaint about the food, however: I demand <span class="highlight">fresh salmon</span> and <span class="highlight">tuna</span> for tomorrow's supper.
+                </h4>
+                <h4>Dali Lester, <span class="highlight">Cat</span> and Lord of the Home.</h4>
+            </div>
+        </div>
+        <div class="dot-menu">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+    
+
+
+
     <section id="contact" class="contact">
         <h2>Contact</h2>
         <h4>If you've got an exciting project or opportunity, I'd love to hear from you.</h4>
             <div class="contact-wrapper">
-                <div class="contact-details-wrapper">
+                <div class="column contact-details-wrapper">
                     <div class="contact-details">
                         <a href="mailto:toby_lester@hotmail.co.uk" target="_blank" class="icon-underline"><i class="fa-regular fa-envelope contact-icons"></i></a>
                         <h3><a href="mailto:toby_lester@hotmail.co.uk" target="_blank" class="menu-hover">toby_lester@hotmail.co.uk</a></h3>
@@ -149,6 +200,9 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+
+        
+    </script>
 </body>
 </html>

@@ -6,7 +6,6 @@
     --white: rgb(243, 238, 233);
     --blue: rgb(177, 205, 231);
     --copper: rgb(224, 154, 104);
-    --brown: rgb(129, 52, 5);
     scroll-behavior: smooth;
 
   }
@@ -20,11 +19,16 @@
     font-family: 'Lato', sans-serif;
 }
 
+body {
+    min-width: 500px;
+}
+
 p {
     font-size: 1rem;
     color: var(--black);
     font-family: 'Lato', sans-serif;
     margin-bottom: 1rem;
+    line-height: 1.4;
 }
 
 h1 {
@@ -57,6 +61,7 @@ h4 {
     font-size: 1.2rem;
     color: var(--black);
     margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 .material-symbols-outlined {
@@ -80,8 +85,10 @@ h4 {
     display: flex;
     gap: 3rem;
     align-items: center;
+    justify-content: center;
     margin: 0 auto;
     max-width: 1400px;
+    flex-wrap: wrap;
 }
 
 .highlight {
@@ -158,7 +165,19 @@ h4 {
 }
 
 .fa {
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
+}
+
+.cta-burger {
+    background-color: var(--copper);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: color 1s ease, background-color 0.7s ease;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    display: none;
+    font-size: 1.5rem;
 }
 
 #burger-items {
@@ -255,7 +274,7 @@ section {
 
 .photo {
     max-width: 40%;
-    margin-bottom: 1rem;
+    object-fit: cover;
 }
 
 
@@ -266,42 +285,144 @@ section {
 
 .about-me h3 {
     line-height: initial;
-
 }
+
+.about-me-columns {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 auto;
+    max-width: 1400px;
+    flex-wrap: wrap;
+}
+
+.about-me-column {
+    flex: 1;
+    flex-basis: 20%;
+}
+
 .projects {
     text-align: center;
     background-color: var(--white);
 }
 
 .tiles {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .tile {
-    flex: 0 0 30%;
-    border: 2px solid var(--black);
-    border-radius: 10px 10px 0 0;
-    background-color: var(--white);
-    padding-bottom: 1rem;
+  flex: 1 1 30%;
+  border: 2px solid var(--black);
+  border-radius: 10px 10px 0 0;
+  background-color: var(--white);
+  position: relative;
+display: flex;
+flex-direction: column;
+height: 100%;
 }
 
 .tile h3, .tile p {
-    padding: 0.5rem 1rem 0 1rem;
-    line-height: initial;
+  padding: 0.5rem 1rem 0 1rem;
+  line-height: initial;
+  flex-grow: 1;
 }
 
 .tile img {
-    border-radius: 10px 10px 0 0;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.tile a {
+    text-underline-offset: 0.5rem;
+    transition: transform 2s ease
+}
+
+.tile a img {
+    transition: transform 2s ease
+}
+
+.tile a img:hover {
+    transform: scale(0.95);
+}
+
+.tile-image-wrapper {
+    background-color: var(--black);
+    transition: background-color 3s ease;
+    border-radius: 8px 8px 0 0;
+}
+
+.tile-image-wrapper:hover {
+    background-color: var(--copper);
+}
+
+.tile-button {
+    padding: 1rem;
+    background-color: var(--copper);
+    transition: color 1s ease, background-color 0.7s ease;
+    font-weight: bold;
+}
+
+.tile-button:hover {
+    background-color: var(--black);
+    color: var(--copper);
+}
+
+.testimonials {
+    background-color: var(--blue);
+    text-align: center;
+    padding: 10%;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: hidden;
     width: 100%;
-    padding-bottom: 0.5rem;
+    margin: 0 auto;
+    white-space: normal;
+}
+
+.quote {
+    flex: 0 0 100%;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.dot-menu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: var(--copper);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: var(--black);
+    cursor: pointer;
 }
 
 .contact {
     text-align: center;
-    background-color: var(--blue);
+    background-color: var(--white);
 }
 
 .contact-wrapper {
@@ -317,6 +438,7 @@ section {
     flex-direction: column;
     gap: 2rem;
     flex-grow: 1;
+    width: 100%;
 }
 
 .contact-details {
