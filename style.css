@@ -321,7 +321,7 @@ section {
 .tile {
     flex: 1 1 30%;
     border: 2px solid var(--black);
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 10px 10px;
     background-color: var(--white);
     position: relative;
 display: flex;
@@ -344,7 +344,7 @@ height: 100%;
 
 .tile a {
     text-underline-offset: 0.5rem;
-    transition: transform 2s ease
+    margin-bottom: 1rem;
 }
 
 .tile a img {
