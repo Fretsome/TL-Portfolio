@@ -65,7 +65,7 @@ h4 {
     font-size: 3rem !important;
     background-color: var(--white);
     border-radius: 50%;
-    border: 2px solid var(--black);
+    box-shadow: 0px 3px 10px 0px var(--black);
     padding: 2rem;
     margin: 1rem;
 }
@@ -107,7 +107,7 @@ h4 {
     z-index: 10;
     gap: 2rem;
     min-height: 4rem;
-    border-bottom: 2px solid var(--black);
+    box-shadow: 0px 3px 10px 0px var(--black);
 }
 
 .logo {
@@ -321,13 +321,13 @@ section {
 
 .tile {
     flex: 1 1 30%;
-    border: 2px solid var(--black);
     border-radius: 10px;
     background-color: var(--white);
     position: relative;
-display: flex;
-flex-direction: column;
-height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0px 3px 10px 0px var(--black);
 }
 
 .tile h3, .tile p {
@@ -390,6 +390,7 @@ height: 100%;
     width: 100%;
     margin: 0 auto;
     white-space: normal;
+    max-width: 900px;
 }
 
 .quote {
@@ -449,7 +450,6 @@ height: 100%;
 .contact-details {
     padding: 1rem;
     text-underline-offset: 0.5rem;
-    border: 2px solid var(--black);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -459,6 +459,7 @@ height: 100%;
     width: 100%;
     background-color: var(--white);
     flex: 1 1 50%;
+    box-shadow: 0px 3px 10px 0px var(--black);
 }
 
 .contact-details i {
@@ -497,7 +498,7 @@ textarea {
 }
 
 .form-wrapper {
-    border: 5px solid var(--copper);
+    box-shadow: 0px 3px 10px 5px var(--copper);
     border-radius: 10px;
     padding: 1rem;
     flex: 1 1;
