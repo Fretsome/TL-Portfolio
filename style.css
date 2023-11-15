@@ -277,11 +277,9 @@ section {
     }
 }
 
-
 .photo {
-    max-width: 40%;
+    width: 40%;
 }
-
 
 .about-me {
     background-color: var(--blue);
