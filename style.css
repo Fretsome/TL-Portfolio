@@ -63,7 +63,7 @@ h4 {
 .material-symbols-outlined {
     color: var(--black);
     font-size: 3rem !important;
-    background-color: var(--light-copper);
+    background-color: var(--white);
     border-radius: 50%;
     border: 2px solid var(--black);
     padding: 2rem;
