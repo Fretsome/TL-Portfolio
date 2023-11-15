@@ -6,8 +6,8 @@
     --white: rgb(243, 238, 233);
     --blue: rgb(177, 205, 231);
     --copper: rgb(224, 154, 104);
+    --light-copper: rgb(233, 196, 168);
     scroll-behavior: smooth;
-
   }
 
 
@@ -20,7 +20,7 @@
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: var(--black);
     font-family: 'Lato', sans-serif;
     margin-bottom: 1rem;
@@ -63,7 +63,7 @@ h4 {
 .material-symbols-outlined {
     color: var(--black);
     font-size: 3rem !important;
-    background-color: var(--copper);
+    background-color: var(--white);
     border-radius: 50%;
     padding: 2rem;
     margin: 1rem;
@@ -88,7 +88,7 @@ h4 {
 }
 
 .highlight {
-    background: var(--copper);
+    background: var(--light-copper);
 }
 
 /* Navigation */
@@ -106,6 +106,7 @@ h4 {
     z-index: 10;
     gap: 2rem;
     min-height: 4rem;
+    border-bottom: 2px solid var(--black);
 }
 
 .logo {
@@ -129,7 +130,7 @@ h4 {
     gap: 2rem;
     font-size: 1.4rem;
     text-underline-offset: 0.5rem;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .menu-hover {
@@ -451,6 +452,7 @@ height: 100%;
     height: 100%;
     width: 100%;
     background-color: var(--white);
+    flex: 1 1 50%;
 }
 
 .contact-details i {
@@ -492,7 +494,7 @@ textarea {
     border: 5px solid var(--copper);
     border-radius: 10px;
     padding: 1rem;
-    flex-basis: 49%;
+    flex: 1 1;
     background-color: var(--white);
 }
 
