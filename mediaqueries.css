@@ -25,15 +25,15 @@
       display: inline;
   }
 
-    .menu-bar {
+  .menu-bar {
       display: none;
     }
   
-    .photo {
+  .photo {
       max-width: 38%;
     }
-
-    .read-more {
+  
+  .read-more {
       display: none;
     }
 
@@ -70,6 +70,9 @@
   }
 
   @media screen and (max-width: 768px) {
+    .logo {
+      font-size: 1.5rem;
+    }
 
     .contact-details-wrapper {
       flex-direction: column;
@@ -84,14 +87,12 @@
 }
   }
 
-@media screen and (max-width: 350px) {
-  .cta-burger {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 400px) {
   .contact-details h3 {
     font-size: 1.1rem;
+  }
+
+  .cta-burger {
+    display: none;
   }
 }
